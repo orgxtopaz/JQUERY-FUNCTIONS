@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+
+      //  FOR A
+      $(".img").mouseover(function () {
+        $("#about").fadeIn(3000);
+
+      });
+      $(".img").mouseout(function () {
+        $("#about").fadeOut(3000);
+      });
+
+
+      //   FOR B
+
+      $(".img").click(function () {
+        $("#testimonials").fadeIn();
+
+      });
+
+
+
+
+      $(".testimony").dblclick(function () {
+        window.open("https://twitter.com/?lang=en");
+
+
+
+
+      });
+
+      // FOR C
+      $(".button").click(function (event) {
+
+        document.body.style.background = "black url('coding.jfif') no-repeat top ";
+
+        document.body.style.backgroundSize = width = "100%";
+
+        $(event.delegateTarget).css("background-color", "green");
+
+        $(".img").css({ boxShadow: '-10px 0 10px #080808, 10px 0 10px #080808, 0 -10px 10px #080808, 0 10px 10px #080808', backgroundColor: 'green' })
+          .animate({ height: "270px", width: "300px", borderRadius: "20px" }, 2000)
+
+          .fadeOut(2000)
+          .css({ boxShadow: '-10px 0 10px #080808, 10px 0 10px #080808, 0 -10px 30px #080808, 0 10px 10px #080808' })
+          .animate({ height: "200px", width: "200px", borderRadius: "50%" }, 2000)
+          .fadeIn(2000)
+
+
+        $("#about").css({
+          color: "green", backgroundColor: "rgb( 20, 20, 20 )"
+
+
+        });
+
+
+
+
+
+      });
+
+
+      //EXERCISE 1
+
+      $(".exercise1").click(function () {
+        var binary = (prompt("Input Number: "));
+        var base2 = (prompt("Input Base(2): "));
+
+        var displaybase2 = parseInt(binary, base2);
+
+        alert("Input number is " + binary + " with base 2 " + "Specified number : " + displaybase2);
+
+      });
+
+      //EXERCISE 2
+
+      $(".exercise2").click(function () {
+
+
+        // Input: 11/12/96
+        // Output: December	
+
+
+        var date = prompt("Input Date:");//INPUT DATE
+        var res = date.split("/");//SPLITING THE VALUE TURN TO ARRAY OF STRING
+        var calculate = (res[1]);
+        var Months = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        alert("Month : " + Months[calculate] + " .");
+
+
+      });
+
+      //EXERCISE 3
+
+      $(".exercise3").click(function () {
+
+        // Input:December 15 2018
+        // Output: Weekend
+
+
+
+        var week = prompt("Input Date:");//December 15, 2018
+        var weekaccess = week.split(" ");//SPLITING THE VALUE TURN TO ARRAY OF STRING
+
+        var calculate = (weekaccess[1]); // GETTING THE INDEX 1 which is the 15.
+        console.log(calculate);
+
+        if (calculate % 5 == 0) {
+          alert("Weekend");
+
+        } else {
+          alert("Weekday");
+        }
+
+
+      });
+
+
+
+
+
+    });
+
+
+
+
+
+
+
+
+
+  </script>
+
+</head>
+
+<body>
+  <style>
+
+
+  </style>
+
+  <!-- A -->
+  <!-- Add a JQuery function wherein if a mouse hovers up your picture,
+         a paragraph describing you fades in.  -->
+
+  <center>
+    <img src="Alan_walker.jpg" alt="" width="200px; " class="img">
+    <div id="about" style="display:none;">
+      <p class="about"> My name is Jmiguel and I am a PN Scholar.</p>
+    </div>
+  </center>
+
+
+  <!--  B  -->
+
+  <!-- Add a functionality where people’s testimonials about you 
+        is seen if a picture is clicked and a double click would
+         redirect you to the person’s social media (your preference.) -->
+
+
+
+  <div id="testimonials" style="display:none;">
+
+    <img src="testimony.jpg" class="testimony1">
+    <img src="gif.gif" class=" testimony testimonybackground" style="border-radius: 10%;">
+
+    <img src="testimony2.jfif" class="testimony2">
+
+    <img src="gif.gif" class=" testimony testimonybackground3" style="border-radius: 10%;">
+
+    <img src="testimony3.jpg" class="testimony3 ">
+
+    <img src="gif.gif" class=" testimony testimonybackground2" style="border-radius: 10%;">
+
+
+
+
+    <p class="textdescribe" style="color:white">Sukad nigamit ko sa hagony herbal capsule <br>nawala
+      akong pamati. dili na nako sya love.
+
+    <p class="textdescribe1" style="color:white">Gwapo gyud ning bataa!
+
+    <p class="textdescribe2" style="color:white">Ang nawong kono sa Gwapo bii!
+
+  </div>
+
+
+
+
+
+
+
+  <!--  C  -->
+
+  <!-- Resize a following picture in the click of a button.
+     The picture should slowly “animate” the resize process. -->
+
+
+  <button class="button">resize</button>
+
+
+  <button class="exercise1">
+    <p>Exercise 1</p>
+  </button>
+
+  <button class="exercise2">
+    <p>Exercise 2</p>
+  </button>
+
+  <button class="exercise3">
+    <p>Exercise 3</p>
+  </button>
+
+
+
+
+
+
+
+
+  

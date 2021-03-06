@@ -1,0 +1,149 @@
+
+    .testimonybackground {
+      left: 1;
+      top: 60%;
+      width: 22%;
+      height: 25%;
+      position: absolute;
+      box-shadow: 0 15px 15px (252, 0, 0, 0.3);
+
+    }
+
+
+    .testimonybackground2 {
+      left: 77%;
+      top: 60%;
+      width: 22%;
+      height: 25%;
+      position: absolute;
+      box-shadow: 0 15px 15px (252, 0, 0, 0.3);
+
+    }
+
+    .testimonybackground3 {
+      left: 38%;
+      top: 60%;
+      width: 22%;
+      height: 25%;
+      position: absolute;
+      box-shadow: 0 15px 15px (252, 0, 0, 0.3);
+
+
+    }
+
+
+    .testimony2 {
+      left: 39%;
+      top: 62%;
+      width: 20%;
+      height: 22%;
+
+      position: absolute;
+    }
+
+    .testimony1 {
+      left: 2%;
+      top: 62%;
+      width: 20%;
+      height: 22%;
+      position: absolute;
+      box-shadow: 0 15px 15px (252, 0, 0, 0.3);
+      border-radius: 5%;
+
+
+    }
+
+
+
+
+
+    .testimony:hover {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .testimony3 {
+      left: 77%;
+      top: 61%;
+      width: 21%;
+      height: 22%;
+      position: absolute;
+      border-radius: 5%;
+    }
+
+    .text {
+      left: 9%;
+      top: 78%;
+
+      position: absolute;
+      text-shadow: 1px 1px 0 #444
+    }
+
+    .textdescribe {
+
+      left: 1%;
+      top: 84%;
+      text-shadow: 1px 1px 0 #444;
+      position: absolute;
+
+    }
+
+    .textdescribe1 {
+
+      left: 43.5%;
+      top: 84%;
+      text-shadow: 1px 1px 0 #444;
+
+      position: absolute;
+
+    }
+
+    .textdescribe2 {
+      left: 81%;
+      top: 84%;
+      position: absolute;
+
+    }
+
+    .button {
+      right: 48%;
+      position: absolute;
+    }
+
+    body {
+      background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+      background-repeat: no-repeat;
+      background-size: 100% 500%;
+
+    }
+
+    .img {
+      border-radius: 50%;
+    }
+
+    .nightmode {
+      background-color: red;
+    }
+
+    /* BUTTON */
+
+.exercise1{
+    position: absolute;
+    bottom: 0;
+    left: 8%;
+}
+
+
+.exercise2{
+    position: absolute;
+    bottom: 0;
+    left: 46%;
+}
+
+
+.exercise3{
+    position: absolute;
+    bottom: 0;
+    left: 85.5%;
+}
+
+
